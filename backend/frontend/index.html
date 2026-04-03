@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Connector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+        <h2>🚀 GitHub Connector</h2>
+
+        <button onclick="login()">Login</button>
+
+        <input id="token" placeholder="Paste Access Token">
+
+        <hr>
+
+        <h3>Repos</h3>
+        <button onclick="getRepos()">Get Repos</button>
+
+        <h3>Issues</h3>
+        <input id="owner" placeholder="Owner">
+        <input id="repo" placeholder="Repo">
+        <button onclick="getIssues()">Get Issues</button>
+
+        <h3>Create Issue</h3>
+        <input id="title" placeholder="Title">
+        <input id="body" placeholder="Body">
+        <button onclick="createIssue()">Create Issue</button>
+
+        <h3>Create PR</h3>
+        <input id="pr_title" placeholder="PR Title">
+        <input id="head" placeholder="Head Branch">
+        <input id="base" placeholder="Base Branch">
+        <button onclick="createPR()">Create PR</button>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+        <div class="output-header">
+            <h3> 📊Output</h3>
+            <button onclick="clearOutput()">Clear</button>
+        </div>
+
+        <pre id="output">No data yet...</pre>
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>

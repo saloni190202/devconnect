@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Layout */
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left panel */
+.left {
+    width: 500px;
+    padding: 15px;
+    background: #1e293b;
+    overflow-y: auto;
+}
+
+.left h3 {
+    margin-bottom: 5px;
+}
+
+/* Right panel */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Output header */
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+    padding: 10px;
+}
+
+/* Output box */
+pre {
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    background: black;
+    color: #00ff88;
+    overflow: auto;
+}
+
+/* Inputs */
+/* Shared style for BOTH */
+input, button {
+    width: 100%;
+    height: 40px;          /* SAME HEIGHT */
+    padding: 0 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Input specific */
+input {
+    border: none;
+    outline: none;
+}
+
+/* Button specific */
+button {
+    border: none;
+    cursor: pointer;
+    background: #3b82f6;
+    color: white;
+    font-weight: 500;
+    display: flex;              /* CENTER TEXT */
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+hr {
+    margin: 15px 0;
+}
+                            
