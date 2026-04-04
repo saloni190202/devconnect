@@ -85,8 +85,8 @@ class GitHubService:
 
         data = {
             "title": title,
-            "head": head,   # branch name with changes
-            "base": base,   # target branch (usually main)
+            "head": head,   
+            "base": base,   
             "body": body
         }
 

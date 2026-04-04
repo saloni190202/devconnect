@@ -5,13 +5,13 @@ body {
     color: white;
 }
 
-/* Layout */
+
 .app {
     display: flex;
     height: 100vh;
 }
 
-/* Left panel */
+
 .left {
     width: 500px;
     padding: 15px;
@@ -23,14 +23,14 @@ body {
     margin-bottom: 5px;
 }
 
-/* Right panel */
+
 .right {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* Output header */
+
 .output-header {
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ body {
     padding: 10px;
 }
 
-/* Output box */
+
 pre {
     flex: 1;
     margin: 0;
@@ -49,11 +49,10 @@ pre {
     overflow: auto;
 }
 
-/* Inputs */
-/* Shared style for BOTH */
+
 input, button {
     width: 100%;
-    height: 40px;          /* SAME HEIGHT */
+    height: 40px;          
     padding: 0 10px;
     margin: 5px 0;
     border-radius: 6px;
@@ -61,20 +60,19 @@ input, button {
     font-size: 14px;
 }
 
-/* Input specific */
+
 input {
     border: none;
     outline: none;
 }
 
-/* Button specific */
 button {
     border: none;
     cursor: pointer;
     background: #3b82f6;
     color: white;
     font-weight: 500;
-    display: flex;              /* CENTER TEXT */
+    display: flex;              
     align-items: center;
     justify-content: center;
 }

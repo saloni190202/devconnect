@@ -15,12 +15,11 @@ function clearOutput() {
     document.getElementById("output").textContent = "Cleared!";
 }
 
-/* Loading state */
+
 function loading() {
     document.getElementById("output").textContent = "Loading...";
 }
 
-/* Repos */
 function getRepos() {
     loading();
 
@@ -30,7 +29,7 @@ function getRepos() {
         .catch(err => show(err));
 }
 
-/* Issues */
+
 function getIssues() {
     loading();
 
@@ -43,7 +42,7 @@ function getIssues() {
         .catch(show);
 }
 
-/* Create Issue */
+
 function createIssue() {
     loading();
 
@@ -60,7 +59,7 @@ function createIssue() {
     .catch(show);
 }
 
-/* Create PR */
+
 function createPR() {
     loading();
 
